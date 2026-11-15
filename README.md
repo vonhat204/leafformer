@@ -1,4 +1,4 @@
-# LeafFormer | ICEBA 2026 và nghiên cứu mở rộng
+# LeafFormer | ICEBA 2026
 
 LeafFormer là mô hình CNN–Transformer gọn nhẹ để phân loại tình trạng lá ổi, xoài và bưởi. Dự án nghiên cứu cách kết hợp đặc trưng cục bộ từ CNN với thông tin không gian rộng hơn từ Transformer trong một mô hình có khoảng **1,59 triệu tham số**.
 
@@ -21,20 +21,13 @@ LeafFormer là mô hình CNN–Transformer gọn nhẹ để phân loại tình 
 
 Hai nhánh dùng chung đặc trưng do encoder trích xuất. Gate tính mức đóng góp của từng nhánh theo ảnh đầu vào. Trong cấu hình có knowledge distillation, mô hình teacher hướng dẫn student khi huấn luyện. Khi suy luận chỉ cần student.
 
-## Bản mở rộng Q3
-
-**Trạng thái:** đã hoàn thành các thí nghiệm so sánh nội bộ dưới đây và chuẩn bị bản thảo mở rộng. Tác giả bản thảo hiện tại gồm **Võ Duy Nhất, Phùng Bảo và Đỗ Minh Tiến**.
-
-- Rà soát **8.370 ảnh thuộc 12 lớp** và xây dựng quy trình đánh giá thống nhất. Có **18 checkpoint** được chọn theo validation và khóa trước khi chấm trên test nội bộ.
-- So sánh trộn thích ứng, lấy trung bình, nối đặc trưng, các baseline và cấu hình có knowledge distillation qua nhiều seed.
-- Đối chiếu độ chính xác với số tham số và tính khoảng tin cậy cho các so sánh ghép cặp. Kết quả nội bộ chưa cho thấy lợi ích nhất quán từ trộn thích ứng hoặc công thức distillation đã thử.
-- Phân tích độ chồng lấp của vùng giải thích **LIME** với vùng tham chiếu trên checkpoint lịch sử. Phần này có phạm vi riêng với kết quả của 18 checkpoint mới.
-
 ## Nguồn dữ liệu và ghi công
 
 Bộ **Leaf Disease Detection Dataset** do **Trần Văn Trung và Võ Duy Nhất** thực hiện và quản lý. Bộ dữ liệu công khai gồm ảnh lá ổi, xoài và bưởi ở trạng thái khỏe hoặc có bệnh. Thống kê và bộ chia của từng thí nghiệm LeafFormer được báo cáo theo từng giai đoạn.
 
 [Xem dữ liệu trên Kaggle](https://www.kaggle.com/datasets/trungbebong2704/leaf-disease-detection-ds) · [README và ảnh mẫu do nhóm công bố](https://github.com/tranvantrung27/leaf-disease-detection-DS)
-## Hướng nghiên cứu tiếp theo
 
-Theo dõi [lộ trình LeafFormer Q2](https://github.com/vonhat204/leafformer-q2).
+## Các giai đoạn liên quan
+
+- [LeafFormer Q3 · Các thí nghiệm nội bộ đã hoàn thành](https://github.com/vonhat204/leafformer-q3)
+- [LeafFormer Q2 · Hướng nghiên cứu tiếp theo](https://github.com/vonhat204/leafformer-q2)
