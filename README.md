@@ -10,7 +10,7 @@ LeafFormer là mô hình CNN–Transformer gọn nhẹ để phân loại tình 
 - **Tác giả theo giấy chứng nhận:** Trần Văn Trung, Võ Duy Nhất, Phùng Bảo và Đỗ Minh Tiến.
 - **Kết quả báo cáo tại hội nghị:** cấu hình LeafFormer dùng knowledge distillation (seed 42) đạt **97,37% accuracy** và **97,43% macro F1** trên bộ kiểm thử nội bộ gồm **1.254 ảnh**.
 
-[Chương trình chính thức của hội nghị, bài O.S7B–273](https://www.iceba-conference.org/booklet-program_ICEBA2026.pdf#page=47) · [ICEBA 2026](https://www.iceba-conference.org/)
+[Chương trình chính thức của hội nghị, bài O.S7B–273](https://www.iceba-conference.org/booklet-program_ICEBA2026.pdf#page=46) · [ICEBA 2026](https://www.iceba-conference.org/)
 
 ## LeafFormer hoạt động ra sao
 
@@ -35,3 +35,6 @@ Hai nhánh dùng chung đặc trưng do encoder trích xuất. Gate tính mức 
 Bộ **Leaf Disease Detection Dataset** do **Trần Văn Trung và Võ Duy Nhất** thực hiện và quản lý. Bộ dữ liệu công khai gồm ảnh lá ổi, xoài và bưởi ở trạng thái khỏe hoặc có bệnh. Thống kê và bộ chia của từng thí nghiệm LeafFormer được báo cáo theo từng giai đoạn.
 
 [Xem dữ liệu trên Kaggle](https://www.kaggle.com/datasets/trungbebong2704/leaf-disease-detection-ds) · [README và ảnh mẫu do nhóm công bố](https://github.com/tranvantrung27/leaf-disease-detection-DS)
+## Hướng nghiên cứu tiếp theo
+
+Theo dõi [lộ trình LeafFormer Q2](https://github.com/vonhat204/leafformer-q2).
