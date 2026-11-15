@@ -21,11 +21,12 @@ LeafFormer là mô hình CNN–Transformer gọn nhẹ để phân loại tình 
 
 Hai nhánh dùng chung đặc trưng do encoder trích xuất. Gate tính mức đóng góp của từng nhánh theo ảnh đầu vào. Trong cấu hình có knowledge distillation, mô hình teacher hướng dẫn student khi huấn luyện. Khi suy luận chỉ cần student.
 
-## Nguồn dữ liệu và ghi công
+## Dữ liệu, mã nguồn và kết quả ICEBA
 
-Bộ **Leaf Disease Detection Dataset** do **Trần Văn Trung và Võ Duy Nhất** thực hiện và quản lý. Bộ dữ liệu công khai gồm ảnh lá ổi, xoài và bưởi ở trạng thái khỏe hoặc có bệnh. Thống kê và bộ chia của từng thí nghiệm LeafFormer được báo cáo theo từng giai đoạn.
-
-[Xem dữ liệu trên Kaggle](https://www.kaggle.com/datasets/trungbebong2704/leaf-disease-detection-ds) · [README và ảnh mẫu do nhóm công bố](https://github.com/tranvantrung27/leaf-disease-detection-DS)
+- **Dữ liệu dùng trong benchmark:** [GMP-Leaf12 đã chia train/validation/test trên Kaggle](https://www.kaggle.com/datasets/trung272004/data-leaf-disease-detection-15k). Trang Kaggle ghi 17.500 ảnh. Log nạp dữ liệu trong benchmark ghi 17.494 mẫu dùng trong thí nghiệm, gồm 15.000 train, 1.240 validation và 1.254 test. [Đối chiếu cách đếm trong README benchmark](https://github.com/tranvantrung27/GMP-Leaf12-Benchmark#gmp-leaf12-dataset).
+- **Mã mô hình:** [Notebook LeafFormer](https://github.com/tranvantrung27/GMP-Leaf12-Benchmark/blob/main/proposed_model/LeafFormer.ipynb) trong [kho mã GMP-Leaf12-Benchmark của nhóm](https://github.com/tranvantrung27/GMP-Leaf12-Benchmark).
+- **Kết quả:** [Báo cáo đánh giá LeafFormer (PDF)](https://github.com/tranvantrung27/GMP-Leaf12-Benchmark/blob/main/results/leafformer_report.pdf).
+- **Ảnh gốc và ghi công:** Bộ ảnh do **Trần Văn Trung và Võ Duy Nhất** thực hiện và quản lý. [Bộ ảnh nguồn trên Kaggle](https://www.kaggle.com/datasets/trungbebong2704/leaf-disease-detection-ds) · [Giới thiệu và ảnh mẫu](https://github.com/tranvantrung27/leaf-disease-detection-DS).
 
 ## Các giai đoạn liên quan
 
